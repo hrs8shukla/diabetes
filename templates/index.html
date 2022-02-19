@@ -8,15 +8,64 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
         <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <style>
+            *{transition:all 0.3s ease-in-out;}
+        
+        
+        
+        nav{float:right;}
+        
+        .logo img{float:left;}
+        
+        ul li{
+          display: inline-block; padding:10px;
+          font-size:20px; font-family:raleway;
+        }
+        
+        ul li:hover{
+          color:blue;
+          
+          
+        }
+        a:link {
+          color:black; 
+          background-color: transparent; 
+          text-decoration: none;
+        }
+        a:hover {
+          color: red;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+          </style>
     </head>
 
     <body>
+        <div class="content">
+            <div class="logo">
+              <img src="/static/Sapto.png" alt="" width="230"/>
+              </div>
+            <nav>
+              <ul>
+            <li><a href="https://diabetss.herokuapp.com"><b>Home</b></a></li>
+            <li><a href="https://sapto-fitness-tracker.herokuapp.com"> <b>Diet Plan</b></a></li>
+              <li><a href="https://depres.herokuapp.com"><b>Mental Health</b></a></li>
+              <li><a href="https://diseasetest.herokuapp.com"><b>Disease</b></a></li>
+              
+              </ul>
+              </nav>
+            </div>
+            <hr />
+
+
+
+
 
         <!-- Website Title -->
     	<div class="container">
             <h2 class='container-heading'><span class="heading_font">Diabetes Predictor</span></h2>
             <div class='description'>
-    			<p>Please enter your details to check diabtes.</p>
+    			<p>Please enter your details to check diabetes.</p>
     		</div>
     	</div>
 
