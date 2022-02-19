@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>Diabetes Predictor</title>
-        <link rel="shortcut icon" href="{{ url_for('static', filename='diabetes-favicon.ico') }}">
+        <link rel="icon" href="https://i.ibb.co/1r35fsX/Sapto-favicon.png" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
         <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -22,7 +22,11 @@
 
         <!-- Text Area -->
     	<div class="ml-container">
-    		<form action="{{ url_for('predict') }}" method="POST">
+            <img class="dep" src="{{ url_for('static', filename='diabetes.png') }}" alt="Unable to process image">
+    	
+           
+            <form action="{{ url_for('predict') }}" method="POST">
+               
                 <input class="form-input" type="text" name="glucose" placeholder="Glucose (mg/dL) eg. 80"><br>
                 <input class="form-input" type="text" name="bloodpressure" placeholder="Blood Pressure (mmHg) eg. 80"><br>
                 <input class="form-input" type="text" name="skinthickness" placeholder="Skin Thickness (mm) eg. 20"><br>
@@ -30,9 +34,12 @@
                 <input class="form-input" type="text" name="bmi" placeholder="Body Mass Index (kg/m²) eg. 23.1"><br>
                 <input class="form-input" type="text" name="dpf" placeholder="Diabetes Pedigree Function eg. 0.52"><br>
                 <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 34"><br>
+                
 
+            
         		<input type="submit" class="my-cta-button" value="Predict">
         	</form>
+        </div>
     	</div>
 
         
